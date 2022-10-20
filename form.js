@@ -68,22 +68,8 @@ form.addEventListener('submit', (e) =>{
    
     const encargo = pizzas.filter(pizza =>{
         return pedido === pizza.id;
-
-        condiciones(encargo);
     });
-
-    const pizza = document.getElementsByName(pizza.id);
-
-    function condiciones (sinCaracter, errorId){
-        if (sinCaracter = null){
-            return 'Debes ingresar un pedido'
-        }
-        if(errorId !== pizza.id){
-            return 'No tenemos ese producto'
-        } 
-    }
-
-    condiciones(encargo);
+    console.log(encargo);
 
     // creo el H2 con el producto y el H3 con el precio en las variables;
     const nombrePizza = document.createElement('h2');
