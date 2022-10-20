@@ -59,6 +59,7 @@ const form = document.getElementById('form');
 const input = document.getElementById('input');
 const lista = document.getElementById('lista-pedido');
 const comanda = document.getElementById('section-pedido');
+const btn = document.getElementById('btn');
 
 // creo el formulario con el evento submit 
 form.addEventListener('submit', (e) =>{
@@ -69,7 +70,8 @@ form.addEventListener('submit', (e) =>{
     const encargo = pizzas.filter(pizza =>{
         return pedido === pizza.id;
     });
-    console.log(encargo);
+
+
 
     // creo el H2 con el producto y el H3 con el precio en las variables;
     const nombrePizza = document.createElement('h2');
